@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MoveMate</string>
+    <string name="title_activity_map">Map</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYXdzc2Jyb29rcyIsImEiOiJjbTJhbDdueWEwajA3MmlwczQwOHQ1ZGxkIn0.nxmVZQSMnmAJXp0WGuJE4g</string>
+</resources>
+

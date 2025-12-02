@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoveMate">
+        <activity
+            android:name=".RoleSelectionActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MoveMate">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.AdminLoginActivity"
+            android:exported="false"
+            android:label="Admin Login"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".admin.AdminDashboardActivity"
+            android:exported="false"
+            android:label="Admin Dashboard"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".admin.UserManagementActivity"
+            android:exported="false"
+            android:label="User Management"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".admin.ShipmentMonitoringActivity"
+            android:exported="false"
+            android:label="Shipment Monitoring"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".admin.FinancialDashboardActivity"
+            android:exported="false"
+            android:label="Financial Dashboard"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".admin.AnalyticsReportingActivity"
+            android:exported="false"
+            android:label="Analytics and Reporting"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".admin.DisputeResolutionActivity"
+            android:exported="false"
+            android:label="Dispute Resolution"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.LoaderDashboardActivity"
+            android:exported="false"
+            android:label="Loader Dashboard"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.CreateShipmentActivity"
+            android:exported="false"
+            android:label="Create Shipment"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.ActiveShipmentsActivity"
+            android:exported="false"
+            android:label="Active Shipments"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.PaymentActivity"
+            android:exported="false"
+            android:label="Payments"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.CarrierDashboardActivity"
+            android:exported="false"
+            android:label="Carrier Dashboard"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.VerificationActivity"
+            android:exported="false"
+            android:label="Verification"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.AvailableLoadsActivity"
+            android:exported="false"
+            android:label="Available Loads"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.EarningsActivity"
+            android:exported="false"
+            android:label="Earnings"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.MyShipmentsActivity"
+            android:exported="false"
+            android:label="My Shipments"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.LoaderLoginActivity"
+            android:exported="false"
+            android:label="Loader Login"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.LoaderRegistrationActivity"
+            android:exported="false"
+            android:label="Loader Registration"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.CarrierLoginActivity"
+            android:exported="false"
+            android:label="Carrier Login"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.CarrierRegistrationActivity"
+            android:exported="false"
+            android:label="Carrier Registration"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.LoaderProfileSettingsActivity"
+            android:exported="false"
+            android:label="Loader Profile"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.PayoutRequestActivity"
+            android:exported="false"
+            android:label="Payout Request"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.CarrierProfileSettingsActivity"
+            android:exported="false"
+            android:label="Carrier Profile"
+            android:theme="@style/Theme.MoveMate" />
+    </application>
+
+</manifest>
