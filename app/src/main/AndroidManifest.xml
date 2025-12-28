@@ -82,6 +82,16 @@
             android:label="Create Shipment"
             android:theme="@style/Theme.MoveMate" />
         <activity
+            android:name=".loader.LoaderMyShipmentsActivity"
+            android:exported="false"
+            android:label="My Shipments"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".loader.LoaderManageBidsActivity"
+            android:exported="false"
+            android:label="Manage Bids"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
             android:name=".loader.ActiveShipmentsActivity"
             android:exported="false"
             android:label="Active Shipments"
@@ -107,6 +117,16 @@
             android:label="Available Loads"
             android:theme="@style/Theme.MoveMate" />
         <activity
+            android:name=".carrier.LoadDetailsActivity"
+            android:exported="false"
+            android:label="Load Details"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.CarrierMyBidsActivity"
+            android:exported="false"
+            android:label="My Bids"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
             android:name=".carrier.EarningsActivity"
             android:exported="false"
             android:label="Earnings"
@@ -115,6 +135,11 @@
             android:name=".carrier.MyShipmentsActivity"
             android:exported="false"
             android:label="My Shipments"
+            android:theme="@style/Theme.MoveMate" />
+        <activity
+            android:name=".carrier.UpdateShipmentStatusActivity"
+            android:exported="false"
+            android:label="Update Shipment Status"
             android:theme="@style/Theme.MoveMate" />
         <activity
             android:name=".loader.LoaderLoginActivity"

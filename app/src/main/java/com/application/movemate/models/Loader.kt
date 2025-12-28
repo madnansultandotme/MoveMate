@@ -5,30 +5,39 @@ data class Loader(
     val name: String = "",
     val email: String = "",
     val phone: String = "",
-    val cnic: String = "",
+    val profileImageUrl: String = "",
+
+    // Company Details
+    val companyName: String = "",
+    val taxId: String = "",
+    val businessAddress: String = "",
 
     // Verification & KYC
     val verificationStatus: VerificationStatus = VerificationStatus.PENDING,
-    val kycDocuments: KYCDocuments = KYCDocuments(),
+    val businessDocuments: LoaderDocuments = LoaderDocuments(),
     val registrationDate: Long = System.currentTimeMillis(),
     val approvedAt: Long? = null,
     val rejectionReason: String? = null,
 
-    // Vehicle Information
-    val vehicleType: String = "",
-    val vehicleCapacity: Double = 0.0,
-    val vehicleNumber: String = "",
-    val licenseNumber: String = "",
+    // Shipping Preferences
+    val defaultPickupAddress: String = "",
+    val preferredVehicleType: String = "",
+    val defaultCargoCategory: String = "",
+    val typicallyShips: List<String> = emptyList(), // "Full Truckload", "Part Load", "Perishables"
 
-    // Performance
-    val rating: Double = 0.0,
-    val totalDeliveries: Int = 0,
-    val completedDeliveries: Int = 0,
+    // Statistics
+    val totalShipments: Int = 0,
+    val activeShipments: Int = 0,
+    val completedShipments: Int = 0,
+    val pendingBids: Int = 0,
+    val monthlySpend: Double = 0.0,
 
-    // Financial
-    val payment: PaymentDetails? = null,
-    val totalEarnings: Double = 0.0,
-    val pendingEarnings: Double = 0.0,
+    // Payment Info
+    val paymentMethod: PaymentMethod? = null,
+
+    // Settings
+    val pushNotificationsEnabled: Boolean = true,
+    val emailNotificationsEnabled: Boolean = true,
 
     // Account Status
     val isActive: Boolean = true,
@@ -36,20 +45,16 @@ data class Loader(
     val suspensionReason: String? = null
 )
 
-data class KYCDocuments(
-    val cnicFrontImage: String = "",
-    val cnicBackImage: String = "",
-    val licenseImage: String = "",
-    val vehicleRegistrationImage: String = "",
-    val vehicleImages: List<String> = emptyList(),
+data class LoaderDocuments(
+    val taxIdDocument: String = "",
+    val businessRegistrationDoc: String = "",
     val uploadedAt: Long = System.currentTimeMillis()
 )
 
-data class PaymentDetails(
-    val bankName: String = "",
-    val accountNumber: String = "",
-    val accountTitle: String = "",
-    val cardNumber: String = ""
+data class PaymentMethod(
+    val id: String = "",
+    val type: String = "", // "Visa", "Mastercard", "Bank"
+    val lastFourDigits: String = "",
+    val expiryDate: String = "",
+    val isDefault: Boolean = false
 )
-
-

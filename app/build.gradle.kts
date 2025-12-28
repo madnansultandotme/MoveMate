@@ -56,6 +56,9 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.mapbox.maps)
     implementation("com.google.firebase:firebase-auth-ktx:23.2.1")
+
+    // Coil for image loading
+    implementation("io.coil-kt:coil-compose:2.5.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
